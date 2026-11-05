@@ -255,8 +255,9 @@ class Renderer(object):
             ycur = y
             step = -line_h
         else:
-            ycur = y - (len(lines) - 1) * line_h / 2.0
-            step = +line_h
+            # centre the whole block: first line on top, then downwards
+            ycur = y + (len(lines) - 1) * line_h / 2.0
+            step = -line_h
         for line in lines:
             self.draw_tokens(x, ycur, line, size, color, bold_color, weight,
                              ha=ha, va=va, container=container)
@@ -469,16 +470,17 @@ def build(lang):
                                  lw=1.4, color=BLUE, transform=ax.transAxes))
 
     # --- bottom takeaway zone ----------------------------------------
-    qx0, qy0, qw, qh = 0.048, 0.046, 0.904, 0.128
+    qx0, qy0, qw, qh = 0.048, 0.050, 0.904, 0.126
     box(qx0, qy0, qw, qh, fc=LIGHT)
     ax.add_patch(Rectangle((qx0, qy0), 0.014, qh, color=NAVY, transform=ax.transAxes))
-    R.draw_rich(0.5, qy0 + 0.052, L['quote1'], L['s_quote1'], color=NAVY,
+    # text block vertically centred in the box (box centre = qy0 + qh/2)
+    R.draw_rich(0.5, qy0 + 0.0925, L['quote1'], L['s_quote1'], color=NAVY,
                 bold_color=NAVY, weight='bold', ha='center',
-                container=(qx0 + 0.03, qy0 + 0.048, qx0 + qw - 0.03, qy0 + qh - 0.008))
-    R.draw_rich(0.5, qy0 + 0.020, L['quote2'], L['s_quote2'], color=NAVY,
+                container=(qx0 + 0.03, qy0 + 0.070, qx0 + qw - 0.03, qy0 + qh - 0.006))
+    R.draw_rich(0.5, qy0 + 0.0465, L['quote2'], L['s_quote2'], color=NAVY,
                 bold_color=RED, weight='bold', ha='center',
                 maxw=qw - 0.09, line_h=0.026,
-                container=(qx0 + 0.03, qy0, qx0 + qw - 0.03, qy0 + 0.045))
+                container=(qx0 + 0.03, qy0 + 0.020, qx0 + qw - 0.03, qy0 + 0.108))
 
     # --- footer --------------------------------------------------------
     ax.add_patch(Rectangle((0, 0.0), 1, 0.044, color=NAVY, transform=ax.transAxes))
