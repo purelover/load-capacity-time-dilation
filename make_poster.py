@@ -56,25 +56,25 @@ LANG = {
             ('① 模拟器的省钱策略', 'chip',
              '不丢帧（怕穿模被看穿）＋用满预算（降频 = 慢动作）'),
             ('② 反直觉修正：看总量，不看脚下', 'sat',
-             'GPS 卫星周围空荡荡，时钟反而更快——系统算的是整片区域的「大资产」（地球势阱），不看脚下'),
-            ('③ 三条规则「凭空」长出公式', 'rules',
-             '悬崖边运行（限流曲线）·信号速度恒定（网络延迟）·参考系跟着内容转 → 自然长出**平方根曲线**'),
+             'GPS 卫星周围空荡荡，时钟却更快：系统算的是整片区域的「大资产」（地球势阱），不看脚下'),
+            ('③ 三条规则「凭空」长出**平方根曲线**', 'rules',
+             '悬崖边运行（限流曲线）·信号速度恒定（网络延迟）·参考系跟着内容转'),
         ],
         cards_r=[
             ('④ 攻克旋转黑洞', 'bh',
              '旋转不是额外负担，只是「齿轮效应」：θ 依赖全被**洛伦兹因子 γ**吸收，视界上全向均匀饱和**100%**'),
             ('⑤ 预测带电黑洞（最硬核）', 'bolt',
-             '加「电荷记账」：扣减球外电场能 Q²/2R（麦克斯韦唯一确定）→ 先推导、后查答案——10 万个随机黑洞，误差**$4\\times10^{-16}$**；连视界位置都是规则自己算出来的'),
+             '加「电荷记账」：扣减球外电场能 Q²/2R（麦克斯韦唯一确定）→ 先推导、后查答案：10 万个随机黑洞，误差**$4\\times10^{-16}$**；连视界位置都是自己算的'),
             ('⑥ 账本完美平账', 'check',
              '黑洞每抹掉 1 单位信息，付出的能量恰好卡在理论最低值——**兰道尔极限**'),
         ],
         quote1='结果定位：精确重述 + 可检验的启发式模型——不是证明',
-        quote2='一句话总结：「如果宇宙是一台**不丢帧 + 用满预算**的模拟器，其时间膨胀曲线必然长这样——而广义相对论恰好如此。」',
+        quote2='「如果宇宙是一台**不丢帧 + 用满预算**的模拟器，其时间膨胀曲线必然长这样——而广义相对论恰好如此。」',
         footer='论文与验证代码公开：github.com/purelover/load-capacity-time-dilation',
         # sizes
         s_title=30, s_sub=12.5, s_band=9.5,
         s_hero_t=14.5, s_hero_big=30, s_hero_word=13.5, s_hero_sat=12, s_hero_note=11,
-        s_colhdr=15, s_card_t=12.2, s_card_b=9.8, card_line_h=0.022,
+        s_colhdr=15, s_card_t=12.2, s_card_b=9.8, card_line_h=0.022, card_gap=0.007,
         s_quote1=12.5, s_quote2=13, s_footer=10,
         # geometry
         cards_top=0.550, cards_bottom=0.183,
@@ -92,28 +92,28 @@ LANG = {
         colhdr_l='How the curve is derived',
         colhdr_r='How accurate · the physics checks',
         cards_l=[
-            ('① The simulator’s cost-saving trick', 'chip',
-             'Never drop frames (clipping would give it away) + spend the full budget (throttling = slow motion)'),
-            ('② The counterintuitive fix: count the whole', 'sat',
-             'GPS satellites sit in near-vacuum, yet their clocks run faster — the system prices the whole region’s “big asset” (Earth’s potential well), not the ground'),
-            ('③ Three rules grow the formula', 'rules',
-             'edge-of-stability running (the load curve) · fixed signal speed (network latency) · frames co-rotate with content → the **square-root curve** grows on its own'),
+            ('① The cost-saving trick', 'chip',
+             'Never drop frames (clipping would give it away) + full budget (throttle = slow motion)'),
+            ('② The counterintuitive GPS fix', 'sat',
+             'GPS satellites sit in near-vacuum, yet their clocks run faster — the system prices the region’s “big asset” (Earth’s potential well)'),
+            ('③ Three rules grow the curve', 'rules',
+             'edge-of-stability running · fixed signal speed (latency) · frames co-rotate with content → the **square-root curve** grows'),
         ],
         cards_r=[
             ('④ Conquering rotating black holes', 'bh',
              'Spin adds no load — just a “gear effect”: all θ-dependence is absorbed into the **Lorentz factor γ**; the horizon saturates uniformly at **100%**'),
-            ('⑤ Predicting charged black holes — hardest', 'bolt',
-             'Add “charge accounting”: deduct the field energy outside, Q²/2R; derive first, check after — 100,000 black holes, max error **$4\\times10^{-16}$**; even the horizon’s location is computed by the rules'),
+            ('⑤ Predicting charged black holes', 'bolt',
+             'Hardest test — add “charge accounting”: deduct the field energy outside, Q²/2R; derive first, check after: 100,000 black holes, max error **$4\\times10^{-16}$**; horizon location computed by the rules'),
             ('⑥ The books balance perfectly', 'check',
-             'Erasing information at a black hole costs exactly the theoretical minimum — the **Landauer limit**'),
+             'Erasing information at a black hole costs the theoretical minimum — the **Landauer limit**'),
         ],
         quote1='Where this lands: an exact rewriting + a testable heuristic model — not a proof',
-        quote2='One-line takeaway: “If the universe is a **no-dropped-frames, full-budget** simulator, its time-dilation curve must look like this — and general relativity’s does.”',
+        quote2='“If the universe is a **no-dropped-frames, full-budget** simulator, its time-dilation curve must look like this — and general relativity’s does.”',
         footer='Paper and verification code: github.com/purelover/load-capacity-time-dilation',
         # sizes
         s_title=30, s_sub=11, s_band=9.5,
         s_hero_t=13.5, s_hero_big=30, s_hero_word=13, s_hero_sat=11.5, s_hero_note=10.5,
-        s_colhdr=13, s_card_t=10.8, s_card_b=8.6, card_line_h=0.0188,
+        s_colhdr=13, s_card_t=10.8, s_card_b=8.6, card_line_h=0.0182, card_gap=0.0065,
         s_quote1=10.5, s_quote2=11.8, s_footer=10,
         # geometry
         cards_top=0.550, cards_bottom=0.183,
@@ -167,30 +167,62 @@ class Renderer(object):
         return bb.width
 
     def wrap(self, s, size, weight, maxw_x):
+        """Balanced greedy-ish wrap via min-raggedness DP over tokens."""
         toks = parse_rich(s)
         px_max = maxw_x * self.px_per_x
-        lines, cur = [], []
-        for tk in toks:
-            if tk[2].isspace() and not cur:
-                continue                       # drop leading spaces
-            if tk[2].isspace():
-                cur.append(tk)
+        n = len(toks)
+        if n == 0:
+            return []
+        w = [self._w_px(t[2], size, 'bold' if t[3] else weight) for t in toks]
+        # candidate break positions between tokens (never right after a space)
+        breaks = [0]
+        for i in range(1, n):
+            if not toks[i][2].isspace():
+                breaks.append(i)
+        breaks.append(n)
+        PEN = (0.22 * px_max) ** 2
+        INF = float('inf')
+        best = [(INF, None)] * (n + 1)
+        best[0] = (0.0, None)
+        for bi, s in enumerate(breaks):
+            if best[s][0] == INF:
                 continue
-            test = cur + [tk]
-            w = sum(self._w_px(t[2], size, 'bold' if t[3] else weight)
-                    for t in test)
-            if cur and w > px_max:
-                while cur and cur[-1][2].isspace():
-                    cur.pop()
-                if cur:
-                    lines.append(cur)
-                cur = [tk]
-            else:
+            for e in breaks[bi + 1:]:
+                total = sum(w[s:e])
+                if total > px_max:
+                    break
+                cost = best[s][0] + (px_max - total) ** 2 + PEN
+                if cost < best[e][0]:
+                    best[e] = (cost, s)
+        if best[n][0] == INF:               # single over-wide token: greedy fallback
+            lines, cur = [], []
+            for tk in toks:
                 cur.append(tk)
-        while cur and cur[-1][2].isspace():
-            cur.pop()
-        if cur:
-            lines.append(cur)
+                wl = sum(self._w_px(t[2], size, 'bold' if t[3] else weight)
+                         for t in cur)
+                if wl > px_max and len(cur) > 1:
+                    lines.append(cur[:-1])
+                    cur = [tk]
+            if cur:
+                lines.append(cur)
+            return [ln for ln in lines if ln]
+        # rebuild lines from back-pointers
+        path, e = [], n
+        while e:
+            s = best[e][1]
+            path.append(e)
+            e = s
+        path.reverse()
+        lines, s = [], 0
+        for e in path:
+            seg = [t for t in toks[s:e]]
+            while seg and seg[-1][2].isspace():
+                seg.pop()
+            while seg and seg[0][2].isspace():
+                seg.pop(0)
+            if seg:
+                lines.append(seg)
+            s = e
         return lines
 
     def draw_tokens(self, x, y, line, size, color, bold_color, weight, ha='left',
@@ -379,14 +411,14 @@ def build(lang):
         # cards
         pad_t, t_lh, gap_tb, pad_b = 0.015, 0.024, 0.011, 0.013
         body_w = w - 0.056 - 0.024
-        y = cards_top
+        y = cards_top                     # top edge of the column
         rects = []
         for (title, icon_kind, body) in items:
             tlines = R.wrap(title, L['s_card_t'], 'bold', body_w)
             blines = R.wrap(body, L['s_card_b'], 'normal', body_w)
             h = pad_t + len(tlines) * t_lh + gap_tb + len(blines) * L['card_line_h'] + pad_b
-            rects.append((x0, y, w, h, tlines, blines, title, icon_kind, body))
-            y -= h + 0.007
+            rects.append((x0, y - h, w, h, tlines, blines, title, icon_kind, body))
+            y -= h + L['card_gap']
         return rects
 
     rects_l = column(*col_l, L['colhdr_l'], L['cards_l'], 'chip')
@@ -398,12 +430,12 @@ def build(lang):
             ax.add_patch(Rectangle((x0, y0), 0.008, h, color=BLUE,
                                    transform=ax.transAxes))
             icon(ax, icon_kind, x0 + 0.030, y0 + h - 0.026, 0.026)
-            # title lines (bold navy)
+            # title lines (bold navy, **red-bold** highlights)
             yt = y0 + h - 0.015
             for line in tlines:
-                R.draw_plain(x0 + 0.056, yt, ''.join(t[2] for t in line),
-                             L['s_card_t'], color=NAVY, weight='bold',
-                             container=(x0 + 0.052, y0, x0 + w - 0.02, y0 + h))
+                R.draw_tokens(x0 + 0.056, yt, line, L['s_card_t'],
+                              color=NAVY, bold_color=RED, weight='bold',
+                              container=(x0 + 0.052, y0, x0 + w - 0.02, y0 + h))
                 yt -= 0.024
             # body lines (rich, gray + red bold)
             yb = y0 + h - 0.015 - len(tlines) * 0.024 - 0.011
@@ -437,22 +469,21 @@ def build(lang):
                                  lw=1.4, color=BLUE, transform=ax.transAxes))
 
     # --- bottom takeaway zone ----------------------------------------
-    qx0, qy0, qw, qh = 0.048, 0.052, 0.904, 0.118
+    qx0, qy0, qw, qh = 0.048, 0.046, 0.904, 0.128
     box(qx0, qy0, qw, qh, fc=LIGHT)
     ax.add_patch(Rectangle((qx0, qy0), 0.014, qh, color=NAVY, transform=ax.transAxes))
-    q_rect = (qx0, qy0, qx0 + qw, qy0 + qh)
-    R.draw_rich(0.5, qy0 + 0.089, L['quote1'], L['s_quote1'], color=NAVY,
+    R.draw_rich(0.5, qy0 + 0.052, L['quote1'], L['s_quote1'], color=NAVY,
                 bold_color=NAVY, weight='bold', ha='center',
-                container=(qx0 + 0.03, qy0 + 0.055, qx0 + qw - 0.03, qy0 + qh - 0.008))
-    R.draw_rich(0.5, qy0 + 0.054, L['quote2'], L['s_quote2'], color=NAVY,
+                container=(qx0 + 0.03, qy0 + 0.048, qx0 + qw - 0.03, qy0 + qh - 0.008))
+    R.draw_rich(0.5, qy0 + 0.020, L['quote2'], L['s_quote2'], color=NAVY,
                 bold_color=RED, weight='bold', ha='center',
                 maxw=qw - 0.09, line_h=0.026,
-                container=(qx0 + 0.03, qy0, qx0 + qw - 0.03, qy0 + 0.088))
+                container=(qx0 + 0.03, qy0, qx0 + qw - 0.03, qy0 + 0.045))
 
     # --- footer --------------------------------------------------------
-    ax.add_patch(Rectangle((0, 0.0), 1, 0.046, color=NAVY, transform=ax.transAxes))
-    R.draw_plain(0.5, 0.023, L['footer'], L['s_footer'], color=WHITE, ha='center',
-                 container=(0.02, 0.0, 0.98, 0.046))
+    ax.add_patch(Rectangle((0, 0.0), 1, 0.044, color=NAVY, transform=ax.transAxes))
+    R.draw_plain(0.5, 0.022, L['footer'], L['s_footer'], color=WHITE, ha='center',
+                 container=(0.02, 0.0, 0.98, 0.044))
 
     out = os.path.join(OUT_DIR, f'poster-{lang}.png')
     fig.savefig(out, dpi=DPI, facecolor='white')
