@@ -3,3 +3,4 @@ paper.log
 paper.out
 paper.html
 *.synctex*
+__pycache__/
