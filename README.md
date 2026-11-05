@@ -18,7 +18,6 @@ rewrites exactly as an information load–capacity saturation curve.
 - `plain-language-slides-en.pptx` — 11-slide plain-language summary (English)
 - `poster-zh.png` — one-page plain-language poster (Chinese, A4)
 - `poster-en.png` — one-page plain-language poster (English, A4)
-- `make_poster.py` — regenerates both posters (matplotlib; run `python3 make_poster.py`)
 - `verification.py` — reproduces every numerical claim of the paper (double precision)
 - `fig1.png` — the universal collapse of all classical solutions onto λ = √(1−x)
 
