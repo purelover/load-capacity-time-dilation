@@ -5,9 +5,11 @@
 A plain-language showcase of the paper's core insight: general relativity's time-dilation curve
 rewrites exactly as an information load–capacity saturation curve.
 
-## Poster preview
+## Poster previews
 
-![plain-language poster](poster-zh.png)
+![plain-language poster (Chinese)](poster-zh.png)
+
+![plain-language poster (English)](poster-en.png)
 
 ## Contents
 
@@ -15,6 +17,7 @@ rewrites exactly as an information load–capacity saturation curve.
 - `plain-language-slides.pptx` — 11-slide plain-language summary (Chinese)
 - `plain-language-slides-en.pptx` — 11-slide plain-language summary (English)
 - `poster-zh.png` — one-page plain-language poster (Chinese, A4)
+- `poster-en.png` — one-page plain-language poster (English, A4)
 - `verification.py` — reproduces every numerical claim of the paper (double precision)
 - `fig1.png` — the universal collapse of all classical solutions onto λ = √(1−x)
 
